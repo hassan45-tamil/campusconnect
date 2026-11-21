@@ -45,7 +45,8 @@ How to Run the Project
 4. Explore the Campus Club & Activity Portal.
 
 Developed By
-
-B. Hassan
-
+Hemalekha R
+Hassan B
 BE CSE (AI & ML)
+
+
