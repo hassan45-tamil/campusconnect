@@ -2,225 +2,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect | Student Portal</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-    <a href="#" class="logo">Campus<span>Connect.</span></a>
-
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Campus<span>Connect.</span></h2>
     <button class="menu-btn" id="menuBtn">☰</button>
-
-    <nav id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#clubs">Clubs</a>
-        <a href="#events">Events</a>
-        <a href="#about">About</a>
-    </nav>
-
+    <ul id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#clubs">Clubs</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
     <a href="#events" class="nav-btn">Explore Events ↗</a>
+  </nav>
 </header>
 
-<main>
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="eyebrow">✦ YOUR CAMPUS, YOUR COMMUNITY</span>
-            <h1>Discover. Connect.<br><span>Make It Happen.</span></h1>
-            <p>
-                Find your community, explore exciting college clubs
-                and never miss an opportunity to make your campus life amazing.
-            </p>
-            <div class="hero-actions">
-                <a href="#clubs" class="primary-btn">Explore Clubs →</a>
-                <a href="#events" class="secondary-btn">View Events</a>
-            </div>
-            <div class="hero-stats">
-                <div><strong>12+</strong><small>Student Clubs</small></div>
-                <div><strong>25+</strong><small>Campus Events</small></div>
-                <div><strong>500+</strong><small>Active Students</small></div>
-            </div>
-        </div>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">✦ YOUR CAMPUS. YOUR COMMUNITY.</p>
+    <h1>Discover Your<br><span>Campus Life.</span></h1>
+    <p class="hero-text">
+      Connect with amazing clubs, discover exciting events,
+      and make your college journey unforgettable.
+    </p>
+    <a href="#clubs" class="main-btn">Explore Clubs →</a>
+    <a href="#events" class="secondary-btn">View Events</a>
 
-        <div class="hero-art">
-            <div class="art-circle">
-                <div class="art-icon">🎓</div>
-                <div class="art-label label-one">🚀 Learn & Grow</div>
-                <div class="art-label label-two">🎨 Create Together</div>
-                <div class="art-label label-three">🤝 Meet People</div>
-            </div>
-        </div>
-    </section>
+    <div class="stats">
+      <div><h2>12+</h2><p>Clubs</p></div>
+      <div><h2>25+</h2><p>Events</p></div>
+      <div><h2>500+</h2><p>Students</p></div>
+    </div>
+  </div>
 
-    <section class="section" id="clubs">
-        <div class="section-heading">
-            <div>
-                <span class="eyebrow">FIND YOUR PEOPLE</span>
-                <h2>Explore Our Clubs</h2>
-                <p>Discover what you love and connect with students who share your interests.</p>
-            </div>
-            <a href="#events" class="text-link">Explore activities →</a>
-        </div>
+  <div class="hero-art">
+    <div class="art-circle">🎓</div>
+    <div class="floating-card card-one">🚀 Innovation</div>
+    <div class="floating-card card-two">🎨 Creativity</div>
+    <div class="floating-card card-three">🤝 Community</div>
+  </div>
+</section>
 
-        <div class="club-grid">
-            <article class="club-card">
-                <div class="club-icon blue">💻</div>
-                <h3>Tech Club</h3>
-                <p>Explore coding, AI, robotics and new technologies.</p>
-                <span class="club-tag">Technology</span>
-            </article>
+<section class="section" id="clubs">
+  <div class="section-heading">
+    <p class="tag">FIND YOUR INTEREST</p>
+    <h2>Explore Our <span>Clubs</span></h2>
+    <p>Join a community that matches your passion.</p>
+  </div>
 
-            <article class="club-card">
-                <div class="club-icon purple">🎨</div>
-                <h3>Arts Club</h3>
-                <p>Show your creativity through art, design and crafts.</p>
-                <span class="club-tag">Creativity</span>
-            </article>
+  <div class="club-grid">
+    <div class="club-card">
+      <div class="club-icon">💻</div>
+      <h3>Tech Club</h3>
+      <p>Explore coding, AI, robotics and technology.</p>
+      <button onclick="joinClub('Tech Club')">Join Club →</button>
+    </div>
 
-            <article class="club-card">
-                <div class="club-icon orange">📸</div>
-                <h3>Photography Club</h3>
-                <p>Capture moments and improve your photography skills.</p>
-                <span class="club-tag">Photography</span>
-            </article>
+    <div class="club-card">
+      <div class="club-icon">🎭</div>
+      <h3>Cultural Club</h3>
+      <p>Celebrate music, dance, art and culture.</p>
+      <button onclick="joinClub('Cultural Club')">Join Club →</button>
+    </div>
 
-            <article class="club-card">
-                <div class="club-icon green">⚽</div>
-                <h3>Sports Club</h3>
-                <p>Participate in sports, fitness and team activities.</p>
-                <span class="club-tag">Sports</span>
-            </article>
+    <div class="club-card">
+      <div class="club-icon">📸</div>
+      <h3>Photography Club</h3>
+      <p>Capture moments and develop your creativity.</p>
+      <button onclick="joinClub('Photography Club')">Join Club →</button>
+    </div>
 
-            <article class="club-card">
-                <div class="club-icon pink">🎭</div>
-                <h3>Cultural Club</h3>
-                <p>Celebrate talent through music, dance and drama.</p>
-                <span class="club-tag">Culture</span>
-            </article>
+    <div class="club-card">
+      <div class="club-icon">⚽</div>
+      <h3>Sports Club</h3>
+      <p>Build teamwork through games and sports.</p>
+      <button onclick="joinClub('Sports Club')">Join Club →</button>
+    </div>
+  </div>
+</section>
 
-            <article class="club-card">
-                <div class="club-icon teal">🌱</div>
-                <h3>Eco Club</h3>
-                <p>Take part in sustainability and environmental activities.</p>
-                <span class="club-tag">Environment</span>
-            </article>
-        </div>
-    </section>
+<section class="events-section" id="events">
+  <div class="section-heading">
+    <p class="tag">WHAT'S HAPPENING?</p>
+    <h2>Upcoming <span>Events</span></h2>
+    <p>Don't miss the exciting activities on campus.</p>
+  </div>
 
-    <section class="events-section" id="events">
-        <div class="section">
-            <div class="section-heading">
-                <div>
-                    <span class="eyebrow">WHAT'S HAPPENING?</span>
-                    <h2>Upcoming Events</h2>
-                    <p>Find an event, join the experience and make new memories.</p>
-                </div>
-            </div>
+  <div class="event-tools">
+    <input type="search" id="eventSearch" placeholder="Search events...">
+    <select id="eventFilter">
+      <option value="all">All Categories</option>
+      <option value="tech">Technology</option>
+      <option value="culture">Cultural</option>
+      <option value="sports">Sports</option>
+    </select>
+  </div>
 
-            <div class="event-tools">
-                <input type="search" id="eventSearch"
-                    placeholder="Search events...">
-                <select id="eventFilter">
-                    <option value="all">All Categories</option>
-                    <option value="Technology">Technology</option>
-                    <option value="Cultural">Cultural</option>
-                    <option value="Sports">Sports</option>
-                </select>
-            </div>
+  <div class="event-grid" id="eventGrid">
+    <div class="event-card" data-category="tech">
+      <div class="event-banner purple">💡</div>
+      <div class="event-info">
+        <span class="event-label">TECHNOLOGY</span>
+        <h3>AI Innovation Day</h3>
+        <p>📅 December 05, 2026</p>
+        <p>📍 Seminar Hall</p>
+        <button onclick="registerEvent('AI Innovation Day')">Register Now →</button>
+      </div>
+    </div>
 
-            <div class="event-grid" id="eventGrid">
-                <article class="event-card" data-category="Technology">
-                    <div class="event-banner event-blue">
-                        <span>TECHNOLOGY</span>
-                        <div>💡</div>
-                    </div>
-                    <div class="event-info">
-                        <span class="event-date">📅 DEC 05, 2026</span>
-                        <h3>AI Innovation Workshop</h3>
-                        <p>Learn about artificial intelligence and innovative ideas.</p>
-                        <div class="event-bottom">
-                            <span>📍 Seminar Hall</span>
-                            <button class="register-btn" data-event="AI Innovation Workshop">Register →</button>
-                        </div>
-                    </div>
-                </article>
+    <div class="event-card" data-category="culture">
+      <div class="event-banner orange">🎤</div>
+      <div class="event-info">
+        <span class="event-label">CULTURAL</span>
+        <h3>Campus Fest 2026</h3>
+        <p>📅 December 12, 2026</p>
+        <p>📍 College Auditorium</p>
+        <button onclick="registerEvent('Campus Fest 2026')">Register Now →</button>
+      </div>
+    </div>
 
-                <article class="event-card" data-category="Cultural">
-                    <div class="event-banner event-purple">
-                        <span>CULTURAL</span>
-                        <div>🎤</div>
-                    </div>
-                    <div class="event-info">
-                        <span class="event-date">📅 DEC 12, 2026</span>
-                        <h3>Campus Talent Fest</h3>
-                        <p>Celebrate music, dance and student performances.</p>
-                        <div class="event-bottom">
-                            <span>📍 Main Auditorium</span>
-                            <button class="register-btn" data-event="Campus Talent Fest">Register →</button>
-                        </div>
-                    </div>
-                </article>
+    <div class="event-card" data-category="sports">
+      <div class="event-banner green">🏆</div>
+      <div class="event-info">
+        <span class="event-label">SPORTS</span>
+        <h3>Sports Championship</h3>
+        <p>📅 December 18, 2026</p>
+        <p>📍 College Ground</p>
+        <button onclick="registerEvent('Sports Championship')">Register Now →</button>
+      </div>
+    </div>
+  </div>
+  <p id="noEvents" class="empty-message" hidden>No events found.</p>
+</section>
 
-                <article class="event-card" data-category="Sports">
-                    <div class="event-banner event-green">
-                        <span>SPORTS</span>
-                        <div>🏆</div>
-                    </div>
-                    <div class="event-info">
-                        <span class="event-date">📅 DEC 18, 2026</span>
-                        <h3>Inter-College Sports Meet</h3>
-                        <p>Show your team spirit and sporting talent.</p>
-                        <div class="event-bottom">
-                            <span>📍 Sports Ground</span>
-                            <button class="register-btn" data-event="Inter-College Sports Meet">Register →</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <p id="noEvents" class="empty-message" hidden>No matching events found.</p>
-        </div>
-    </section>
-
-    <section class="join-section" id="about">
-        <div>
-            <span class="eyebrow">BE PART OF SOMETHING BIG</span>
-            <h2>Your Campus Journey<br>Starts Here.</h2>
-            <p>Discover new interests, build friendships and make every campus moment count.</p>
-        </div>
-        <a href="#clubs" class="primary-btn">Join the Community →</a>
-    </section>
-</main>
+<section class="about-section" id="about">
+  <p class="tag">ABOUT OUR PLATFORM</p>
+  <h2>One Platform. <span>Endless Opportunities.</span></h2>
+  <p>
+    CampusConnect brings students, clubs and campus activities
+    together in one simple digital platform.
+  </p>
+</section>
 
 <footer>
-    <a href="#" class="logo">Campus<span>Connect.</span></a>
-    <p>Connecting students. Creating opportunities.</p>
-    <small>© 2026 CampusConnect. Student Mini Project.</small>
+  <h2>Campus<span>Connect.</span></h2>
+  <p>Connecting Students. Creating Memories.</p>
+  <p class="copyright">© 2026 CampusConnect. All Rights Reserved.</p>
 </footer>
 
-<div class="modal" id="registerModal" aria-hidden="true">
-    <div class="modal-content">
-        <button class="close-modal" id="closeModal" aria-label="Close">×</button>
-        <span class="eyebrow">EVENT REGISTRATION</span>
-        <h2>Join the Event</h2>
-        <p id="selectedEvent"></p>
-        <form id="registrationForm">
-            <label for="studentName">Student Name</label>
-            <input id="studentName" type="text" placeholder="Enter your name" required>
-
-            <label for="studentEmail">Email Address</label>
-            <input id="studentEmail" type="email" placeholder="Enter your email" required>
-
-            <button type="submit" class="primary-btn full-btn">Submit Registration</button>
-        </form>
-        <p id="formMessage" class="form-message" role="status"></p>
-    </div>
+<div class="modal" id="registerModal">
+  <div class="modal-box">
+    <button class="close-btn" id="closeModal">✕</button>
+    <h2>Event Registration</h2>
+    <p id="selectedEvent"></p>
+    <form id="registrationForm">
+      <input type="text" id="studentName" placeholder="Your Name" required>
+      <input type="email" id="studentEmail" placeholder="Your Email" required>
+      <button type="submit" class="main-btn">Submit Registration</button>
+    </form>
+    <p id="formMessage"></p>
+  </div>
 </div>
-
-<div id="toast" class="toast" role="status"></div>
 
 <script src="script.js"></script>
 </body>
