@@ -47,6 +47,6 @@ How to Run the Project
 Developed By
 Hemalekha R
 Hassan B
-BE CSE (AI & ML)
 
+BE CSE (AI & ML)
 
